@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* reset.css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+*[hidden] {
+    display: none;
+}
+
+body {
+	line-height: 1;
+    background-color: #f8f4f4;
+}
+
+menu, ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/lora-v32-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lato-v24-latin-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: local('Lato Semibold'), local('Lato-Semibold'), url('fonts/latosemibold.woff2') format('woff2'), url('fonts/latosemibold.woff') format('woff'), url('fonts/latosemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+html:root {
+    --text-block-p-color: color: rgba(0, 0, 0, 0.80);
+    --black-text: #000000;
+    --a-text-color: #EC5598;
+    --see-more-button-text-color: #FF427F; 
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header__main-text {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Lora';
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    color: var(--black-text);
+}
+
+.header__logo--small-logo {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.main-section__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 73px;
+    margin: 0 auto;
+    margin-bottom: 62px;
+    max-width: 1170px;
+}
+
+.main-section__blocks li {
+    position: relative;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.main-section__blocks li img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.main-section__blocks a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.main-section__blocks li div a img {
+    height: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.main-section__blocks li div {
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 #e0cece;;
+    width: 90%;
+    padding: 20px 15px 20px 18px;
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+}
+
+.main-section__blocks li div p {
+    max-width: 218px;
+    text-align: left;
+    font-family: 'Lato';
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--text-block-p-color)
+}
+
+.main-section__blocks li div h2 {
+    font-family: 'Lora';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+    color: var(--black-text);
+}
+
+.main-section__blocks li div a p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+    color: var(--a-text-color);
+}
+
+.main-section__button {
+    display: block;
+    margin: 0 auto;
+    max-width: 243px;
+    text-align: center;
+    border: 1.5px solid var(--see-more-button-text-color);
+    border-radius: 2px;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    text-transform: uppercase;
+    color: var(--see-more-button-text-color);
+    text-decoration: none;
+    padding: 18px 47px 18px 47px;
+}
+
+@media (min-width: 1170px) {
+    .header__main-text {
+        letter-spacing: 1.08px;
+        font-size: 3.6rem;
+    }
+
+    .main-section__blocks li div {
+        right: 0;
+        left: auto;
+    }
+
+    .main-section__blocks {
+        margin-bottom: 108px;
+    }
+}
+
+
+
+
+
