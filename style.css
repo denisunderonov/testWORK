@@ -209,7 +209,7 @@ li {
 .main-section__button {
     display: block;
     margin: 0 auto;
-    max-width: 246px;
+    max-width: 256px;
     text-align: center;
     border: 1.5px solid var(--see-more-button-text-color);
     border-radius: 2px;
