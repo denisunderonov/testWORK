@@ -108,7 +108,7 @@ li {
 .header__main-text {
     text-align: center;
     margin-bottom: 10px;
-    font-family: 'Lora';
+    font-family: 'Lora', serif;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 500;
@@ -178,7 +178,7 @@ li {
 .main-section__blocks li div p {
     max-width: 218px;
     text-align: left;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -187,7 +187,7 @@ li {
 }
 
 .main-section__blocks li div h2 {
-    font-family: 'Lora';
+    font-family: 'Lora', serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
@@ -197,7 +197,7 @@ li {
 }
 
 .main-section__blocks li div a p {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -213,7 +213,7 @@ li {
     text-align: center;
     border: 1.5px solid var(--see-more-button-text-color);
     border-radius: 2px;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
@@ -231,7 +231,7 @@ li {
     transition-duration: 0.1s;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1166px) {
     .header__main-text {
         letter-spacing: 1.08px;
         font-size: 3.6rem;
