@@ -245,6 +245,10 @@ li {
     .main-section__blocks {
         margin-bottom: 108px;
     }
+
+    .main-section__blocks--wedding {
+        order: -1;
+    }
 }
 
 
